@@ -1,10 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Loginto from './Loginto';
 import Login from './Login';
-function App() {
+const App=()=>{
   return (
     <>
+    <Switch>
+    <Route exact path="/Loginto" component={Loginto} />
     <Login/>
+    </Switch>
     </>
   );
 }
