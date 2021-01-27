@@ -92,6 +92,7 @@ font-weight: bold;
  background-color:rgb(3, 130, 248);
  border-radius: 30px;
 }
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -157,7 +158,42 @@ button {
 #signUpHeader{
   margin-left: 90px;
 }
+ 
+.modal{
+  height:78vh;
+  background-color:rgb(72, 123, 233);
+  border-radius: 67px;
+}
 
-MDBInput {
+#popUp #signUpHeader {
+margin-left:189px;
+margin-top:-23px;
+font-size:35px;
+font-family: 'Mulish', sans-serif;
+}
+#popUp #MDBInput{
 
+  margin-bottom: 29px;
+  margin-top: -29px;
+  margin-left: 140px;
+  width:50%;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+
+
+#popUp #SignLabel{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 29px;
+  margin-top: -29px;
+  margin-left: 140px;
+ }
+#btnSignUp{
+  border-radius:9px;
+  margin-left: 7px;
+  margin-top: -60px;
 }

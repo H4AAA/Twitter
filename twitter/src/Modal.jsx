@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SignUp from './SignUp'
-const Modal= ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
-     
-        <>
-          <div className="modal-overlay"/>
+const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
+
+  <>
+    <div className="modal-overlay" />
     <div className="modal-wrapper" aria-modal aria-hidden tabIndex={-1} role="dialog">
       <div className="modal">
         <div className="modal-header">
@@ -12,12 +12,12 @@ const Modal= ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-      <SignUp/>
+        <SignUp />
       </div>
     </div>
-        </>, document.body
-    
-): null;
+  </>, document.body
+
+) : null;
 export default Modal;
 
 

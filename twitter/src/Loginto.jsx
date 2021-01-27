@@ -1,10 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 const Loginto = () => {
-    const mystyle = {
-      marginBottom:"80px",
-      marginLeft:"80px",
-      };    
+     
       return (
         <>
             <div id="Login" className="container-fluid col-md-10 col-10">
