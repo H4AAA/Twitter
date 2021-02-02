@@ -1,0 +1,43 @@
+.Login_con {
+  background-color: rgb(16, 43, 48);
+  flex: 1;
+  margin-left: -10px;
+  margin-right: -10px;
+  display: inline-block; 
+  /* flex-direction: column; */
+}
+Button {
+  border-radius: 120px;
+  background-color: rgb(22, 169, 218) !important;
+  margin-left: 42% !important;
+  margin-top: 2% !important;
+  width:10%;
+}
+.Login_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5vh;
+}
+.Login_header {
+  color: white;
+  font-size: 190%;
+  margin-top: 150px;
+  margin-left: 450px;
+}
+.Login_div > input {
+  margin-left: -5%;
+  width: auto;
+  margin-top: 5% !important;
+  padding:10px;
+  border-radius: 5px;
+  margin-bottom: 5% !important;
+  border:none;
+}
+.Login_con .Login_Input {
+  margin-left: 40.4%;
+  border-radius: 5px;
+  padding:10px;
+  border:none;
+  width: auto;
+}
