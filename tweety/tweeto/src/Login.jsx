@@ -2,6 +2,7 @@ import React, { useState, setShow } from 'react'
 import Button from '@material-ui/core/Button';
 import Modal from './Modal';
 import Home from './Home'
+import TweetBox from './TweetBox'
 import Fire from './Firebase';
 import './Login.css'
 import {Route,NavLink,Redirect,useHistory} from 'react-router-dom';
@@ -40,7 +41,7 @@ function Login(props) {
             // <Redirect to="/Home"/>
            
             history.push("/Home");
-            
+            <TweetBox value1={idCard} />
           
 
             

@@ -25,13 +25,14 @@ function TweetBox(props) {
     const onFileChange = (e) => {
         const file = e.target.files;
         fullName.fileName = e.target.files[0].name;
-       
+
     };
 
 
     const submit = (event, tweet, file, fileName) => {
         event.preventDefault();
-
+        alert("This is id passing")
+        alert(props.value1)
         // var id = Fire.auth().currentUser.uid;
         // var id = idCard;
         // var id = props.idCard;
@@ -39,12 +40,12 @@ function TweetBox(props) {
         var id = '1WmziAJGqHUePC1cXtj6fsYdk5D2';
         var namo = fullName.fileName;
         //  alert(namo)
-         // alert(id)
-         
-         const UPD = Fire.storage().ref('Post/' + id + namo).put(fullName.file[0]).then(data => {
+        // alert(id)
+
+        const UPD = Fire.storage().ref('Post/' + id + namo).put(fullName.file[0]).then(data => {
             data.ref.getDownloadURL().then(url => {
                 // alert(url)
-                Fire.database().ref('User/' + id + '/Posts/' ).push({
+                Fire.database().ref('User/' + id + '/Posts/').push({
                     Link: url,
                     tweet: fullName.tweet,
                 });

@@ -9,7 +9,7 @@ export default function Home(props) {
     return (
         < >
             <Sidebar />
-            <Feed idCard={props.idCard} />
+            <Feed value={props.idCard} />
             <Widget />
         </ >
     )
