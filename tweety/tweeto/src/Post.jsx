@@ -28,7 +28,7 @@ function Post({
                         <h3>
                         {displayName}  
                             <span className="post_headerSpecial">
-                               {verified && <VerifiedUserIcon className="post_badge"  />}
+                               {/* {verified && <VerifiedUserIcon className="post_badge"  />} */}
                                 @{userName}
                             </span>
                         </h3>

@@ -11,5 +11,4 @@ const Fire= firebase.initializeApp ( {
 });
 
 export default Fire;
-
-
+ 

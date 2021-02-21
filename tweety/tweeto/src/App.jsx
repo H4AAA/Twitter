@@ -1,23 +1,24 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Sidebar from './Sidebar';
 import Widget from './Widget'
 import SidebarOption from './SidebarOption';
 import Feed from './Feed';
 import Login from './Login';
-import { BrowserRouter, Route,Switch } from 'react-router-dom';
+import Home from './Home';
+import {BrowserRouter,Route, Switch,Redirect } from 'react-router-dom';
 const App = () => {
 
-  return( <Switch>
+ 
+  return (
+    <BrowserRouter>
     <>
-      <div className="app">
-        <Login />
-        {/* <Rout exact path="/Home" component={Home} /> */}
-        {/* <Sidebar />
-        <Feed />
-        <Widget /> */}
+       <div className="app">
+       <Switch> <Route exact path="/" component={Login} />
+       <Route exact path="/Home" component={Home} /></Switch>
+      
       </div>
     </>
-  </Switch>
-  );
-};
+ </BrowserRouter>
+ );
+  };
 export default App;

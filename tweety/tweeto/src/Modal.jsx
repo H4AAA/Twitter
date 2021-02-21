@@ -11,11 +11,11 @@ const Modal = ({ show, close }) => {
         fName: "",
         pHno: "",
         PWD: "",
-        ImageUrl:"",
-        ImagName:"",
+        ImageUrl: "",
+        ImagName: "",
         file: [],
-         
-        
+
+
     });
 
     const onFileChange = (e) => {
@@ -46,7 +46,7 @@ const Modal = ({ show, close }) => {
         pHno,
         PWD,
         file,
-     ) => {
+    ) => {
 
         event.preventDefault();
         // email=useState(email);
@@ -60,22 +60,22 @@ const Modal = ({ show, close }) => {
 
         Fire.auth().createUserWithEmailAndPassword(fullName.email, fullName.PWD).then(() => {
             // Signed in 
-            
+
             alert("login submitted")
             var id = Fire.auth().currentUser.uid;
 
-            const UPD = Fire.storage().ref('User/AvatarImage.png').put(fullName.file[0]).then(data=>{
-                data.ref.getDownloadURL().then(url=>{
+            const UPD = Fire.storage().ref('User/AvatarImage.png').put(fullName.file[0]).then(data => {
+                data.ref.getDownloadURL().then(url => {
                     // alert(url)
                     Fire.database().ref('User/' + id).update({
-                        Link : url,
+                        Link: url,
                     });
                     alert("Image added successfully");
                 })
             })
-           
 
-             Fire.database().ref('User/' + id).set({
+
+            Fire.database().ref('User/' + id).set({
                 userName: fullName.userName,
                 email: fullName.email,
                 fName: fullName.fName,
